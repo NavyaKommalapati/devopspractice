@@ -13,7 +13,7 @@ ADD ./index.html /var/www/html
 #RUN systemctl enable nginx
 
 EXPOSE 80
-STOPSIGNAL SIGTERM
+#STOPSIGNAL SIGTERM
 CMD ["nginx", "-g" , "daemon off"]
 
 
