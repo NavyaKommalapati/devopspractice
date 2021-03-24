@@ -8,6 +8,7 @@ FROM ubuntu
 RUN apt-get update -y
 RUN apt-get install tree -y
 RUN apt-get install nginx -y
+ADD ./index.html /var/www/html
 <<<<<<< HEAD
 =======
 #RUN systemctl enable nginx
