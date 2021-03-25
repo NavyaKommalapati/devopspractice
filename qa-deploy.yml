@@ -2,4 +2,4 @@
  - hosts: qa
    tasks:
      - name: pushing newly created image into repository
-       raw: docker pull NavyaKommalapati/devopspractice:1.0
+       raw: docker pull navyakommalapati/devopspractice:1.0
