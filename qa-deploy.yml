@@ -2,7 +2,7 @@
  - hosts: qa
    tasks:
      - name: pull newly created image into qa env
-       raw: docker pull devopspractice:9.0
+       raw: docker pull 031196/dockerdemorepository:9.0
 
 
      - name: copy compose file into qa instance
