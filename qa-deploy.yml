@@ -6,7 +6,7 @@
 
 
      - name: copy compose file into qa instance
-       copy: src=/var/lib/jenkins/workspace/demo-pipelin1/demo.yml dest=/root
+       copy: src=/var/lib/jenkins/workspace/demo-pipeline1/demo.yml dest=/root
 
 
      - name: bringdown compose file if container is already running
