@@ -9,8 +9,8 @@
        copy: src=/var/lib/jenkins/workspace/demo-pipeline1/demo.yml   dest=/root
 
 
-         # - name: bringdown compose file if container is already running
-         #raw: docker-compose -f /root/demo.yml dowm
+     - name: bringdown compose file if container is already running
+       raw: docker-compose -f /root/demo.yml dowm
 
 
      - name: bringup application 
