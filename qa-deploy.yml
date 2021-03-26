@@ -2,11 +2,11 @@
  - hosts: qa
    tasks:
      - name: pull newly created image into qa env
-       raw: docker pull navyakommalapati/devopspractice:9.0
+       raw: docker pull NavyaKommalapati/devopspractice:9.0
 
 
      - name: copy compose file into qa instance
-       copy: src=/var/lib/jenkins/workspace/demo-pipeline1/demo.yml dest=/root
+       copy: src=/var/lib/jenkins/workspace/demo-pipeline1/demo.yml   dest=/root
 
 
      - name: bringdown compose file if container is already running
