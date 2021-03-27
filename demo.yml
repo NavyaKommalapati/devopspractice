@@ -3,5 +3,6 @@ version: '3.3'
 services:
   apache:
     image: '031196/dockerdemorepository:9.0'
+    container_name: webapp
     ports:
       - '80:80'
