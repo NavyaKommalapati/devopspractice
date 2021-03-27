@@ -10,7 +10,7 @@
 
 
      - name: bringdown compose file if container is already running
-       raw: docker-compose -f /root/demo.yml dowm
+       raw: docker-compose -f /root/demo.yml down
 
 
      - name: bringup application 
