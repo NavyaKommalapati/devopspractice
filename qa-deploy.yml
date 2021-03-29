@@ -17,5 +17,5 @@
        raw: docker-compose -f /root/demo.yml up -d
 
    
-     - name: start nginx service inside container
-       raw: docker exec -it webapp /bin/bash -c "service nginx start && servicce nginx status"
+         #     - name: start nginx service inside container
+         #raw: docker exec -it webapp /bin/bash -c "service nginx start && servicce nginx status"
