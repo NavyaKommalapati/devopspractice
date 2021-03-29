@@ -40,8 +40,27 @@ stage("deploy app on ansible client qa")
 {
 steps
 {
-
+script
+{
+if('${params.select-env}' == "qa")
+{
 ansiblePlaybook credentialsId: 'ansible', disableHostKeyChecking: true, installation: 'ansible', inventory: '/etc/ansible/hosts', playbook: '/var/lib/jenkins/workspace/demo-pipeline1/qa-deploy.yml'
+}
+}
+}
+}
+
+stage("deploy app on ansible client prod")
+{
+steps
+{
+script
+{
+if('${params.select-env}' == "prod")
+{
+ansiblePlaybook credentialsId: 'ansible', disableHostKeyChecking: true, installation: 'ansible', inventory: '/etc/ansible/hosts', playbook: '/var/lib/jenkins/workspace/demo-pipeline1/prod-deploy.yml'
+}
+}
 }
 }
 }
