@@ -49,7 +49,7 @@ ansiblePlaybook credentialsId: 'ansible', disableHostKeyChecking: true, installa
 }
 }
 }
-/*
+
 stage("deploy app on ansible client prod")
 {
 steps
@@ -62,7 +62,7 @@ ansiblePlaybook credentialsId: 'ansible', disableHostKeyChecking: true, installa
 }
 }
 }
-}/
+}
 }
 }
 
